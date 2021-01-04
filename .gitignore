@@ -1,1 +1,5 @@
 tracker.venv
+.idea
+__pycache__
+src/tracker.egg-info/*
+src/tracker.egg-info/PKG-INFO

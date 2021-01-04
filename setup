@@ -1,6 +1,6 @@
 VENV="$(basename $PWD).venv"
-pip install --upgrade pip
 test -d $VENV || python3 -m venv $VENV || return
+pip install --upgrade pip
 
 $VENV/bin/pip3 install -r requirements.txt
 $VENV/bin/pip3 install -e . --no-deps

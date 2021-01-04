@@ -44,6 +44,9 @@ setup(
     # this tells setuptools to look in the src/isc/ directory when finding
     # python packages
     package_dir={"": "src"},
+    entry_points = {
+        "console_scripts": ["manage.py=tracker.manage:main"],
+    },
     # this will include extra files in the built distribution
     install_requires=[],
 )
