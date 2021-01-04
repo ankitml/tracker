@@ -1,0 +1,10 @@
+VENV="$(basename $PWD).venv"
+pip install --upgrade pip
+test -d $VENV || python3 -m venv $VENV || return
+
+$VENV/bin/pip3 install -r requirements.txt
+$VENV/bin/pip3 install -e . --no-deps
+source $VENV/bin/activate
+
+export DATABASE_URL=postgres://tracker:oLJuuRamho%zJJprJQd4FR!QT08X*@$W@localhost/tracker
+
